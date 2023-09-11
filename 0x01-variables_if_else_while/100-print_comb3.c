@@ -1,33 +1,25 @@
 #include <stdio.h>
-/**
-main - three digit printer
-Return: always 0 (success)
 
+/**
+*main - three digit printer
+*Return: always 0 (success)
 */
+
 int main(void)
 {
 int i;
 int j;
-int k;
-{
-for (i = 0; i <= 7; i++);
-{
 
-for (j = 0; j <= 8; j++);
+for (i = 0; i < 10; i++)
 {
 
-for (k = 0; k <= 9; k++);
+for (j = 0; j < 10; j++)
 {
 
-if (i != j && j != k && i != k)
+if (i != j)
 {
 
-putchar('%d\n', i, j, k + 0);
-putchar(' ');
-putchar(',');
-
-}
-}
+printf("%d %d\n", i, j);
 }
 }
 }
