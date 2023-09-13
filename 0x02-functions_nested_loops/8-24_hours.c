@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*jack_bauer. - entry point
+*jack_bauer - entry point
 *Description: function that prints every minute
 *of the day of jack_bauer,starting 00:00 to 23:59
 *Return: 0 if successful
