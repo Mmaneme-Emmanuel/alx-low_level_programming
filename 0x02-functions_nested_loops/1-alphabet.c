@@ -1,6 +1,7 @@
 #include "main.h"
+/lphabet.c
 /**
-*print_alphabet - this is my function
+*print_alphabet - we shall win
 *Return: retun 0
 */
 
