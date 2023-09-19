@@ -4,8 +4,8 @@
 *@a:parameter 1
 *@n:parameter 2
 */
-void print_array(int *a, int n)
 
+void print_array(int *a, int n)
 {
 int i;
 
