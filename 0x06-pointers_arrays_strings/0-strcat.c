@@ -24,7 +24,6 @@ for (i = 0; src[i] != '\0'; i++)
 {
 
 }
-
 for (i = 0; i <= srcl; i++)
 {
 dest[destl + i] = src[i];
