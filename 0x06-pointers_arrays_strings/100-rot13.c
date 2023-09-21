@@ -2,15 +2,14 @@
 #include "stdio.h"
 /**
 *rot13 - main function
-*
 *@s: String pointer
-*
-*Return: return s
+*Return: return *s
 */
+
 char *rot13(char *s)
 {
-
-	int k, r;
+int k;
+int r;
 
 char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
@@ -24,7 +23,7 @@ if (s[k] == data1[r])
 s[k] = datarot[r];
 break;
 }
+}
+}
 return (s);
-}
-}
 }
