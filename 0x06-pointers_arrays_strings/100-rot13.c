@@ -1,10 +1,11 @@
 #include "main.h"
+#include "stdio.h"
 /**
 *rot13 - main function
 *
 *@s: String pointer
 *
-*Return: string function
+*Return: return s
 */
 char *rot13(char *s)
 {
