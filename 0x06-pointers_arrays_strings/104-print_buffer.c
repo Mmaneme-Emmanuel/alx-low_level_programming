@@ -3,7 +3,7 @@
 /**
 *print_buffer - main function
 *@b: the buffer
-*@bsize: size of buffer
+*@size: parameter of size of buffer
 *Return: 0
 */
 void print_buffer(char *b, int size)
