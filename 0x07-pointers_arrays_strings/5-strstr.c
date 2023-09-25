@@ -3,12 +3,12 @@
 *_strstr - main function
 *@needle:parameter
 *@haystack:parameter
-Return: _strstr
+*Return: _strstr
 */
 char *_strstr(char *haystack, char *needle)
 {
 
-for (;*haystack != '\0'; haystack++)
+for (; *haystack != '\0'; haystack++)
 {
 char *I = haystack;
 char *P = needle;
