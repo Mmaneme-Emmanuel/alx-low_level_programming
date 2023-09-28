@@ -12,7 +12,7 @@ if (b * b == a)
 
 return (b);
 
-else if (b * b > 4)
+else if (b * b > a)
 
 return (-1);
 
