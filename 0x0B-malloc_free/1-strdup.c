@@ -10,18 +10,22 @@
 char *_strdup(char *str)
 {
 char *Ek;
-int i;
-int j = 0;
+int i, j = 0;
 
 if (str == NULL)
 return (NULL);
+i = 0;
+
 while (str[i] != '\0')
 i++;
+
 Ek = malloc(sizeof(char) * (i + 1));
+
 if (Ek == NULL)
 return (NULL);
 
 for (j = 0; str[j]; j++)
 Ek[j] = str[j];
+
 return (Ek);
 }
