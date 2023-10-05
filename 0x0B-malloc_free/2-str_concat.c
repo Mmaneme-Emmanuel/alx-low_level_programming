@@ -10,14 +10,14 @@
 char *str_concat(char *s1, char *s2)
 {
 char *concat;
-int i = 0;
-int j = 0;
+int i, j;
 
 if (s1 == NULL)
-return (s1);
+s1 = "";
 
 if (s2 == NULL)
-return (s2);
+s2 = "";
+i = j = 0;
 
 while (s1[i] != '\0')
 i++;
@@ -38,7 +38,7 @@ i++;
 while (s2[j] != '\0')
 {
 concat[i] = s2[j];
-j++;
+i++, j++;
 }
 concat[i] = '\0';
 return (concat);
