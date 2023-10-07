@@ -2,25 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *_memset - function that allocates memory for an array
- *@s:memory allocated
-*@b: char to copy
- *@n: number of times
- *Return: pointers
- */
-char *_memset(char *s, char b, unsigned int n)
-
-{
-unsigned int i;
-
-for (i = 0; i < n; i++)
-{
-	s[i] = b;
-}
-return (s);
-
-/**
- * *_calloc - allocates memory for an array
+ *_calloc - allocates memory for an array
  * @nmemb: number of elements in the array
  * @size: size of each element
  *
@@ -28,17 +10,21 @@ return (s);
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-char *ptr;
+void *mem;
+char *filler;
+unsigned int index;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-ptr = malloc(size * nmemb);
+mem = malloc(size * nmemb);
 
-if (ptr == NULL)
+if (mem == NULL)
 return (NULL);
 
-_memset(ptr, 0, nmemb * size);
+filler = mem;
+for (index = 0; index < (size * nmemb); index++)
+	filler[index] = '\0';
 
-return (ptr);
+return (mem);
 }
