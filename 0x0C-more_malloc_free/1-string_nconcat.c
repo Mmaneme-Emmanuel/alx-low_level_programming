@@ -38,5 +38,5 @@ s[i++] = s2[j++];
 
 s[i] = '\0';
 
-return (s1);
+return (s);
 }
