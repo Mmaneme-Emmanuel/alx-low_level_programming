@@ -1,6 +1,5 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-#include "dog.h"
 /**
  *struct dog - it changes the dog info
  *@name: name to initialize
