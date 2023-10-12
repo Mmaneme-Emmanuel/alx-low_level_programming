@@ -9,8 +9,9 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	size_t n, o, i;
-	dog_t *dog;
+
+size_t n, o, i;
+dog_t *dog;
 
 if (name == NULL || owner == NULL)
 	return (NULL);
