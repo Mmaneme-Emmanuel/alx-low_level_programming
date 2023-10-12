@@ -18,7 +18,7 @@ if (array == NULL || cmp == NULL)
 for (i = 0; i < size; i++)
 {
 	if (cmp(array[i] != 0))
-		return (1);
+		return (i);
 }
 return (-1);
 }
