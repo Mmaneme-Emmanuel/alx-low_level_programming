@@ -7,11 +7,11 @@
  * @argv: argument vector
  * Return: return the result of calc.
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 
-char *op; /* operator */
-int num1, num2;  /* number input */
+int num1, num2;
+char *op;
 
 if (argc != 4) /* if argument count is wrong */
 {
@@ -21,7 +21,7 @@ exit(98);
 
 /* set command argument input */
 
-num1 = atoi(argv[i]; /* first number input */
+num1 = atoi(argv[1]); /* first number input */
 
 op = (argv[2]); /* operator input */
 
@@ -36,7 +36,7 @@ exit(99);
 
 /* if user decides to divide or perform modulus by 0 */
 
-if ((*op == '\' && num2 == 0) || (*op == % && num2 == 0))
+if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
 
 printf("Error\n");
 

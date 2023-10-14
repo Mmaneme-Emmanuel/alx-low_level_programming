@@ -19,6 +19,6 @@ int i;
 i = 0;
 
 /*s doesnt match with any of the operands */
-while (ops[i].op != NULL && *(ops[i].op != *s)
+while (ops[i].op != NULL && *(ops[i].op) != *s)
 i++;
 return (ops[i].f); /*return operation*/
