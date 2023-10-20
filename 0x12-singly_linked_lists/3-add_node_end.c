@@ -35,6 +35,7 @@ if (*head == NULL)
 return (ek_node);
 }
 while (temp->next)
+	temp = temp->next;
 temp->next = ek_node;
 
 return (ek_node);
