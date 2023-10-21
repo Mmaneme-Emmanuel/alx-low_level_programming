@@ -14,7 +14,7 @@ if (h == NULL)
 for (total = 1; h->next != NULL; total++)
 {
 if (h->str == NULL)
-printf("[%u] %s\n", h->len, "(nill)");
+printf("[%u] %s\n", h->len, "(nil)");
 
 	else
 
