@@ -1,4 +1,5 @@
 #include <stdio.h>
+void ekene(void)__attribute__((constructor));
 /**
  * ekene - this is the first I ma using printf
  */
