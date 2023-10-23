@@ -1,8 +1,4 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
-
 /**
 *print_listint - function that prints all the elements.
 *@h:what keeps track of the loop
