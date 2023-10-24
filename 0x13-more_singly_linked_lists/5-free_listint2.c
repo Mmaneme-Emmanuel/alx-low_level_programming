@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-*free_listint - function that frees a listint_t list.
+*free_listint2 - function that frees a listint_t list.
 *@head: the head node of the listint
 *Return: returned a freed listint
 */
@@ -12,11 +12,17 @@ void free_listint2(listint_t **head)
 
 listint_t *temp;
 
-while (head != NULL)
-        temp = head;
+if (head == NULL && *head == NULL)
+	return;
+
+
+while ((*head)->next != NULL)
 {
-head = head->next;
-free(temp);
+temp = (*head)->next;
+
+free(*head);
+*head = temp;
 }
-head = NULL;
+free(*head);
+*head = NULL;
 }
