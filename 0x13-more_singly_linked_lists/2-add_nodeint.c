@@ -4,7 +4,7 @@
 #include "lists.h"
 /**
  *add_nodeint - adds a new node at the beginning of a listint_t
- *@h:head of the first node
+ *@head:head of the first node
  *@n:the data of the new node
  *Return:return a node with an integer
  */
