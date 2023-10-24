@@ -5,7 +5,6 @@
 /**
  *create_newprime - inserts a new node at a given position
  *@n: this will be used for iteration
- *@head: first node
  *Return:new node
  */
 listint_t *create_newprime(int n)
