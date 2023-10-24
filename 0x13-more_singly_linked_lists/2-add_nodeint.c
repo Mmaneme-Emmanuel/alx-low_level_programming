@@ -31,5 +31,5 @@ eprime->next = *head;
 eprime->n = n;
 *head = eprime;
 
-return (0);
+return (eprime);
 }
