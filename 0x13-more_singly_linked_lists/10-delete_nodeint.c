@@ -6,7 +6,7 @@
 *delete_nodeint_at_index - function that deletes the node at index
 *@index:index of the new node
 *@head: head with the first address
-*Returns:return 1 if it succeeded, -1 if it failed
+*Return:return 1 if it succeeded, -1 if it failed
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
