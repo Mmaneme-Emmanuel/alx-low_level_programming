@@ -19,8 +19,8 @@ temp = *head;
 if (head == NULL || *head == NULL)
 return (-1);
 
-for (i = 0; i < index - 1 && temp != NULL; i++)
-temp = (*head)->next;
+for (i = 0; i < index - 1 && temp != NULL && index != 0; i++)
+temp = temp->next;
 
 if (temp == NULL)
 return (-1);
