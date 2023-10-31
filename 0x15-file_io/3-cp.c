@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*ad_file - checking for erros in a file
+*error_file - checking for erros in a file
 *@argv: argument vector
 *@file_from: the name of the file to be checked
 *@file_to: destination that file will copy to
