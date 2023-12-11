@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistint - prints all elements of a doucly linked list
+ * dlistint_len - prints all elements of a doucly linked list
  * @h: head of my node
  * Return:return the elements in my list as count
  */
