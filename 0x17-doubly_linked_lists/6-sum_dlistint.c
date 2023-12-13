@@ -9,11 +9,11 @@
 */
 int sum_dlistint(dlistint_t *head)
 {
-	int sum;
-	sum = 0;
-
+int sum;
+sum = 0;
 
 while (head->prev != NULL)
+
 head = head->prev;
 
 while (head != NULL)
