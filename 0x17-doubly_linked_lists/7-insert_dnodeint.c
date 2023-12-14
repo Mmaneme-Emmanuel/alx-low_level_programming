@@ -21,17 +21,13 @@ if (idx == 0)
 else
 {
 	head = *h;
-	i = 1;
-	if (head != NULL)
-		while (head->prev != NULL)
-			head = head->prev;
-	while (head != NULL)
+	i = 0;
+	while (head != NULL && i < idx - 1)
 	{
-		if (i == idx)
-		{
-			if (head->next == NULL)
-				new = add_dnodeint(h, n);
-			else
+		head = head->next;
+		i++;
+	}
+		if (head != NULL)
 			{
 				new = malloc(sizeof(dlistint_t));
 				if (new != NULL)
@@ -39,15 +35,11 @@ else
 					new->n = n;
 					new->next = head->next;
 					new->prev = head;
-					head->next->prev = new;
+					if (head->next != NULL)
+						head->next->prev = new;
 					head->next = new;
 				}
 			}
-			break;
-		}
-		head = head->next;
-		i++;
-		}
-}
+}	
 return (new);
 }
