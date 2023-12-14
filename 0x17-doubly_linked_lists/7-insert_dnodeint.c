@@ -27,19 +27,19 @@ else
 		head = head->next;
 		i++;
 	}
-		if (head != NULL)
-			{
-				new = malloc(sizeof(dlistint_t));
-				if (new != NULL)
-				{
-					new->n = n;
-					new->next = head->next;
-					new->prev = head;
-					if (head->next != NULL)
-						head->next->prev = new;
-					head->next = new;
-				}
-			}
-}	
+	if (head != NULL)
+	{
+		new = malloc(sizeof(dlistint_t));
+		if (new != NULL)
+		{
+			new->n = n;
+			new->next = head->next;
+			new->prev = head;
+			if (head->next != NULL)
+				head->next->prev = new;
+			head->next = new;
+		}
+	}
+}
 return (new);
 }
