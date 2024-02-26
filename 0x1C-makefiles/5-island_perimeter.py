@@ -1,24 +1,23 @@
 #!/usr/bin/python3
+"""A function that measures the perimeter of a land"""
+
 def island_perimeter(grid):
-    perimeter = 0
-    rows, cols = len(grid), len(grid[0])
+    """Initializing variables that holds the result 
+	that could be gotten whilemeaasurement is on going.
+    """
+    length = len(grid)
+    width = len(grid[0])
+    edges = 0
+    total_size = 0
 
-    for i in range(rows):
-        for j in range(cols):
+    for i in range(length):
+        for j in range(width):
+
             if grid[i][j] == 1:
-                perimeter += 4  # Each land cell contributes 4 to the perimeter
-
-                # Check left neighbor
+                total_size += 1
                 if j > 0 and grid[i][j - 1] == 1:
-                    perimeter -= 1
-                # Check right neighbor
-                if j < cols - 1 and grid[i][j + 1] == 1:
-                    perimeter -= 1
-                # Check top neighbor
+                    edges += 1
                 if i > 0 and grid[i - 1][j] == 1:
-                    perimeter -= 1
-                # Check bottom neighbor
-                if i < rows - 1 and grid[i + 1][j] == 1:
-                    perimeter -= 1
+                    edges += 1
 
-    return perimeter
+    return total_size * 4 - edges * 2 
