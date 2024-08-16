@@ -1,17 +1,20 @@
 #include "main.h"
+#include <stdio.h>
+
+
 /**
-*multiply all the time
+*mul- multiply two integers
 *@a: first number to input
 *@b: second number to input
-*Return: return mul
+*
+*Return: return the multiplied two numbers
 */
+
 int mul(int a, int b)
 
 {
 	int mul;
 
 	mul = a * b;
-
-	return(mul);
+	return (mul);
 }
-	
